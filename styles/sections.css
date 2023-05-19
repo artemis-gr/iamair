@@ -15,7 +15,7 @@
 .vertical-logo {
     position: absolute;
     margin-top: -60px;
-    font-size: 626.5px;
+    font-size: 620px;
     font-style: italic;
     font-weight: 300;
     max-width: 1ch;
@@ -164,6 +164,7 @@
     background-color: #eaeaea;
     text-align: -moz-center;
     margin-inline: 2%;
+    margin-top: 150px;
 }
 #audiences h2 {
     font-size: 76px;
