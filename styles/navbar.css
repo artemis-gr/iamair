@@ -66,3 +66,7 @@
 .navbar .languages li:not(:last-child) {
     margin-right: 10px;
 }
+
+.speaker.disabled {
+  opacity: .5;
+}
