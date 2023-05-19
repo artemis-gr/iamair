@@ -9,12 +9,12 @@
     max-width: 1600px;
     margin: 0 auto;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 0;
 }
 
 .vertical-logo {
     position: absolute;
-    font-size: 350px;
+    font-size: 600px;
     font-style: italic;
     font-weight: 300;
     max-width: 1ch;
@@ -24,22 +24,27 @@
 
 /******************************************************************/
 
+.what-column {
+    background-color: white;
+    border: 1px solid black;
+}
+
 #what-is-aimair {
     border: solid 1px transparent; /* this is just a hack to include child h2's top margin. */
     padding-left: 250px;
 }
 #what-is-aimair p {
-    max-width: 850px;
+    max-width: 1100px;
     margin-top: 30px;
 }
 #what-is-aimair p:nth-child(2) {
-    margin-left: 125px;
+    /* margin-left: 125px; */
 }
 #what-is-aimair p:nth-child(3) {
-    margin-left: 250px;
+    /* margin-left: 250px; */
 }
 #what-is-aimair p:nth-child(4) {
-    margin-left: 375px;
+    margin-left: 125px;
 }
 
 /******************************************************************/
@@ -47,7 +52,7 @@
 #how-does-it-work {
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 0;
     margin-left: 20%;
 }
 #how-does-it-work h2,
@@ -67,11 +72,12 @@
     width: 500px;
 }
 #how-does-it-work > div > div:first-child {
-    margin-right: 50px;
+    margin-right: 25px;
+    padding: 25px;
 }
 @media only screen and (min-width: 992px) {
     #how-does-it-work {
-        padding-left: 450px;
+        padding-left: 530px;
         padding-bottom: 150px;
         margin-left: 0;
     }
@@ -89,10 +95,11 @@
         /* flex-wrap: wrap; */
     }
     #how-does-it-work > div > div {
-        width: 450px;
+        width: 530px;
+        padding: 25px;
     }
     #how-does-it-work > div > div:first-child {
-        margin-right: 100px;
+        margin-right: 50px;
     }
 }
 /******************************************************************/
@@ -120,11 +127,12 @@
     width: 500px;
 }
 #for-who > div > div:first-child {
-    margin-right: 50px;
+    margin-right: 25px;
+    padding: 25px;
 }
 @media only screen and (min-width: 992px) {
     #for-who {
-        padding-left: 450px;
+        padding-left: 530px;
         padding-bottom: 150px;
         margin-left: 0;
     }
@@ -142,17 +150,19 @@
         /* flex-wrap: wrap; */
     }
     #for-who > div > div {
-        width: 450px;
+        width: 530px;
+        padding: 25px;
     }
     #for-who > div > div:first-child {
-        margin-right: 100px;
+        margin-right: 50px;
     }
 }
 /******************************************************************/
 #audiences {
-    padding: 10px;
+    padding: 0;
     background-color: #eaeaea;
     text-align: -moz-center;
+    margin-inline: 2.7%;
 }
 #audiences h2 {
     font-size: 76px;
@@ -183,7 +193,7 @@
 #audiences > div {
     display: flex;
     flex-direction: column;
-    max-width: 75%;
+    /* max-width: 75%; */
     padding-left: 0!important;
 }
 #audiences > h2 {
@@ -198,8 +208,8 @@
 .audiences-options {
     padding-top: 40px;
     background: white;
-    padding-right: 2.5%;
-    margin-left: 2.5%;
+    /* padding-right: 2.5%;
+    margin-left: 2.5%; */
 }
 .btn-book {
     background-color: black;
@@ -237,13 +247,14 @@
 @media only screen and (min-width: 992px) {
     #audiences {
         background-color: #eaeaea;
-        padding: 0px 50px 50px 0px;
+        padding: 0;
         text-align: -moz-center;
+        margin-inline: 2.7%;
     }
     #audiences > div {
         flex-direction: row;
-        max-width: 1600px;
-        padding-left: 400px !important;
+        /* max-width: 1600px; */
+        padding-left: 0;
     }
     #audiences > div > div {
         width: 50%;
@@ -271,17 +282,21 @@
 }
 
 /******************************************************************/
-
+.people-container {
+    margin-inline: 2.7%;
+    margin-top: 50px;
+}
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 28px;
+  gap: 24px;
   padding-top: ;
 }
 
 .image-gallery > li {
-  flex-basis: 330px; /* width: 235px; */
+  /* flex-basis: 330px;  */
+  /* width: 235px; */
 }
 
 .image-gallery li img {
