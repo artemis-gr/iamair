@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="styles/become-audiences.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<div class="intro-title">
+		<a href="/systers/iamair"><img src="images/X.png" alt="cancel button" style="height: inherit;width: 55%;margin: 0;padding-top: 3px;"></a> 
+		<h1 style="margin: auto;">CREATE A PROFILE</h1>
+		<div class="square"><div id="speaker"></div></div>
+	</div>
+	<div id="intro" style="padding: 5px 0 20px 25px;">
+		
+
+		<p class="intro">We warmly invite people of all backgrounds, educations, ages, appearances, and beliefs to create a profile and join our community of Audiences at IAMAIR (IAI). You are welcome here, and we value the diversity and support that each of you brings to our research and collective art projects. Best of all, it's completely free, and you don't need any prior experience or talent.</p>
+
+		<p class="intro">We highly value your privacy and won't sell your data to third-party entities. We'll only use your contact information to keep you updated and invite you to join our performances and events. If you ever wish to delete your profile, please contact us at <span class="underline">contact@iamair.nl</span>, and we'll promptly take care of it.</p>
+
+		<p class="intro">Please note that this website is currently in its first version. We're working on a new version where you'll be able to access and edit your profile. We appreciate any feedback, ideas, or questions you may have and welcome you to send them to us at <span class="underline">contact@iamair.nl</span>.</p>
+
+
+
+
+			
+	</div>
+
+	<form action="https://formsubmit.co/meliijer@gmail.com" enctype="multipart/form-data" method="POST">
+		<h3>1.Contact</h3>
+
+		<div style="padding: 50px 0;">
+			<label for="name">NAME</label>
+			<input type="text" id="name" name="Name" required>
+
+			<label for="email">EMAIL</label>
+			<input type="email" id="email" name="Email" required>
+
+			<label for="phone-number">PHONE NUMBER</label>
+			<input type="tel" id="phone-number" name="Phone number" placeholder="Not mandatory">
+
+			<p>These informations are kept private in our database. They wont be shown on your profile. We will use your email to keep you informed about important updates. We will use your your email and phone number to invite you to participate in collective art performances.</p>
+		</div>
+
+		<h3>2.Participation preferences</h3>
+
+		<div style="padding-top: 50px">
+			<div class="box">
+			  	<h4>I WANT TO PARTICIPATE IN THE CREATION OF A PERFORMANCE</h4>
+			  
+			  	<div class="box-aligned-center">
+					<label for="yes" class="option">YES</label> 
+					<input type="radio" id="yes" value="YES" name="Creation of performance" checked />
+					  
+					<label for="no" class="option">NO</label>
+					<input type="radio" id="no" value="NO" name="Creation of performance" />
+					  
+					<label for="maybe" class="option">MAYBE</label>
+					<input type="radio" id="maybe" value="MAYBE" name="Creation of performance" />
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="box">
+			  	<h4>I WANT TO PLAY A ROLE IN A PERFORMANCE</h4>
+			  
+			  	<div class="box-aligned-center">
+					<label for="yes-role" class="option">YES</label> 
+					<input type="radio" id="yes-role" value="YES" name="Role in performance" checked />
+					  
+					<label for="no-role" class="option">NO</label>
+					<input type="radio" id="no-role" value="NO" name="Role in performance" />
+					  
+					<label for="maybe-role" class="option">MAYBE</label>
+					<input type="radio" id="maybe-role" value="MAYBE" name="Role in prformance" />
+				</div>
+			</div>
+		</div>
+
+		<div style="padding-bottom: 50px">
+			<div class="box">
+			  	<h4>I WANT TO BE INVITED TO SEE A PERFORMANCE</h4>
+			  
+			  	<div class="box-aligned-center">
+					<label for="yes-invite" class="option">YES</label> 
+					<input type="radio" id="yes-invite" value="YES" name="Invite to performance" checked />
+					  
+					<label for="no-invite" class="option">NO</label>
+					<input type="radio" id="no-rinvite" value="NO" name="Invite to performance" />
+					  
+					<label for="maybe-invite" class="option">MAYBE</label>
+					<input type="radio" id="maybe-invite" value="MAYBE" name="Invite to performance" />
+				</div>
+			</div>
+
+			<p>All activities are free and you can change your preferences anytime. These informations are kept private in our database.</p>
+		</div>
+
+
+		<h3>3.Profile</h3>
+
+		<div style="padding: 50px 0;">
+			<label for="username">USERNAME</label>
+			<input type="text" id="username" name="Username" required>
+
+			<label for="bio">BIO</label>
+			<textarea id="bio" name="Bio"></textarea>
+
+			<label for="city">CITY</label>
+			<input type="text" id="city" name="City">
+
+			<label for="country">COUNTRY</label>
+			<input type="text" id="country" name="Country">
+
+			<label for="talents">DO YOU HAVE TALENTS?</label>
+			<input type="text" id="talents" name="Talents" placeholder="No, I don't have any / Yes, I'm fun..." >
+
+			<label>DO YOU HAVE ANY OF THESE SPECIALIZATIONS?</label>
+			<div class="box">
+			  	<div class="box-aligned-right">
+
+					<label for="mediation-education" class="checkoption">MEDIATION/EDUCATION</label> 
+					<input type="checkbox" id="mediation-education" value="MEDIATION/EDUCATION" name="Specialization Mediation or Education" checked /><br>
+
+					<label for="acting-theatre" class="checkoption">ACTING/THEATRE</label> 
+					<input type="checkbox" id="acting-theatre" value="ACTING/THEATRE" name="Specialization Acting or Theatre" /><br>
+
+					<label for="writing-storytelling" class="checkoption">WRITING/STORYTELLING</label> 
+					<input type="checkbox" id="writing-storytelling" value="WRITING/STORYTELLING" name="Specialization Writing or Storytelling" /><br>
+
+					<label for="performance-dance" class="checkoption">PERFORMANCE/DANCE</label> 
+					<input type="checkbox" id="performance-dance" value="PERFORMANCE/DANCE" name="Specialization Performance or Dance" /><br>
+
+					<label for="visual-conceptual" class="checkoption">VISUAL/CONCEPTUAL ART</label> 
+					<input type="checkbox" id="visual-conceptual" value="VISUAL/CONCEPTUAL ART" name="Specialization Visual or Conceptual art" /><br>
+
+					<label for="photography-film" class="checkoption">PHOTOGRAPHY/FILM</label> 
+					<input type="checkbox" id="photography-film" value="PHOTOGRAPHY/FILM" name="Specialization Photography or Film" />
+				</div>	
+					  
+			</div>
+
+			<p>You do not need any talent or specialization to participate. If you have talents and if it's possible, we will honor them to create collective art performances.These informations will be visible on your profile.</p>
+		</div>
+
+		<h3>4.Profile picture</h3>
+
+		<div style="padding: 50px 0;">
+			<div class="box-upload">
+				<div class="row">
+				  <div class="column">
+				    <label for="file" style="cursor: pointer;" class="upload">UPLOAD IMAGE</label>
+				  </div>
+				  <div class="column">
+				    <img id="output" width="100%" /> 
+				    <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+				  </div>
+				</div>
+			</div>
+			<p>Upload a selfie or a portrait of yourself. Your face and eyes should face the camera. This picture will be visible on the website.</p>
+		</div>
+
+		<h3>5.Almost there</h3>
+
+		<div style="padding: 50px 0;">
+			<input type="checkbox" id="privacy-policy" value="privacy-policy" name="Privacy policy check" required />
+			<label for="privacy-policy" class="checklight">I agree with IAI's <a href="/systers/iamair/privacy-policy.html" class="blue">privacy policy</a></label> <br>
+		</div>
+
+		<input type="hidden" name="_subject" value="New submission 'Create a profile' form!">
+		<input type="hidden" name="_next" value="https://hub.xpub.nl/systers/iamair/thanks.html">
+		<input type="submit" value="SEND FORM">
+	</form>
+
+	<script>
+	var loadFile = function(event) {
+		var image = document.getElementById('output');
+		image.src = URL.createObjectURL(event.target.files[0]);
+	};
+	</script> 
+</body>
+</html>

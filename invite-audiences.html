@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="styles/become-audiences.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<div class="intro-title">
+		<a href="/systers/iamair"><img src="images/X.png" alt="cancel button" style="height: inherit;width: 55%;margin: 0;padding-top: 3px;"></a> 
+		<h1 style="margin: auto;">INVITE AUDIENCES</h1>
+		<div class="square"><div id="speaker"></div></div>
+	</div>
+	<div id="intro" style="padding: 5px 0 20px 25px;">
+		<p class="intro">If you are a cultural organization, museum, gallery, event, or art fair, IAMAIR invites you to work with us and bring our innovative approach to cultural mediation to your visitors. Our goal is to generate new forms of knowledge production in cultural institutions through interactive performances that challenge visitors' assumptions and encourage critical reflection.</p>
+
+		<p class="intro">Our services are tailored to your institution's goals and needs, and we are committed to creating a transformative experience that engages your visitors in a unique way. All you need to do is fill in the form below to tell us more about your goals and needs, and we will contact you soon to arrange a meeting over coffee and discuss how we can work together.</p>
+
+		<p class="intro">Please note that our project is an artistic research, and we are continuously working on improving our services. The data you provide in the form is kept private in our database and is only used for research purposes. We appreciate any feedback, ideas, or questions you may have and welcome you to send them to us at <a href="mailto:contact@iamair.nl" class="black">contact@iamair.nl</a>.</p>
+
+		<p class="intro">Thank you for your interest in working with IAMAIR. We look forward to exploring the boundaries of cultural mediation together!</p>
+	</div>
+
+	<form action="https://formsubmit.co/meliijer@gmail.com" enctype="multipart/form-data" method="POST">
+		<h3>1.Institution</h3>
+
+		<div style="padding: 50px 0;">
+			<label for="name-institution">NAME INSTITUTION</label>
+			<input type="text" id="name-institution" name="name-institution" required>
+
+			<label for="city-institution">CITY</label>
+			<input type="text" id="city-institution" name="city-institution" >
+
+			<label for="ticket-price">STANDARD TICKET PRICE</label>
+			<input type="text" id="ticket-price" name="ticket-price" placeholder="">
+
+			<label for="visitors">APROX NUMBER OF VISITORS PER DAY</label>
+			<input type="text" id="visitors" name="visitors" placeholder="">
+
+			<p>These informations are kept private in our database. We will use them for research purposes only and to get an idea of the type of institution you represent in order to tailor our services to it.</p>
+		</div>
+
+		<h3>2.Contact person</h3>
+
+		<div style="padding: 50px 0;">
+			<label for="name-contact">NAME CONTACT PERSON</label>
+			<input type="text" id="name-contact" name="name-contact" required>
+
+			<label for="position">POSITION</label>
+			<input type="text" id="position" name="position">
+
+			<label for="email-contact">EMAIL</label>
+			<input type="email" id="email-contact" name="email-contact" placeholder="">
+
+			<label for="phone-number-contact">PHONE NUMBER</label>
+			<input type="tel" id="phone-number-contact" name="phone-number-contact" placeholder="Not mandatory">
+
+			<p>These informations are kept private in our database. We will use them to contact you after you submit the form.</p>
+		</div>
+
+		<h3>3.Project</h3>
+
+
+		<div style="padding: 50px 0;">
+			<label for="goal">GOAL</label>
+			<textarea id="goal" name="goal" placeholder="" style="padding-bottom: 40px;"></textarea>
+
+			<p style="margin-top: 0 !important;">Briefly describe the project and/or the reason why you wish to call upon our services. For example, an exhibition or an event, a need to enhance your institution from a new perspective, etc.</p>
+
+			<div class="row" style="background-color: transparent!important;">
+			 	<div class="column" style="background-color: transparent!important;padding-left: 0 !important;">
+			    <label for="startDate">START DATE</label>
+			    <input type="date" id="startDate" name="startDate">
+			 	</div>
+				<div class="column" style="background-color: transparent!important;padding-top: 25px;padding-right: 0 !important;text-align: right;">
+			    <label for="undefined" class="checkoption" style="font-style: normal !important;">UNDEFINED</label> 
+			    <input type="checkbox" id="undefined" value="UNDEFINED" name="undefined" style="margin-right: 0 !important;" /><br>
+			 	</div>
+			</div>
+			<div class="row" style="background-color: transparent!important;margin-top: -20px;">
+			 	<div class="column" style="background-color: transparent!important;padding-left: 0 !important;">
+			    <label for="endDate">END DATE</label>
+			    <input type="date" id="endDate" name="endDate">
+			 	</div>
+				<div class="column" style="background-color: transparent!important;padding-top: 25px;padding-right: 0 !important;text-align: right;">
+			    <label for="undefined2" class="checkoption" style="font-style: normal !important;">UNDEFINED</label> 
+			    <input type="checkbox" id="undefined2" value="UNDEFINED2" name="undefined2" style="margin-right: 0 !important;" /><br>
+			 	</div>
+			</div>
+
+			<p style="margin-top: 0 !important;">When does the exhibition, event, or project for which you are using our services begin and end?</p>
+		</div>
+
+		<h3>4.Ask audiences</h3>
+
+		<div style="padding: 50px 0;">
+			<div class="row" style="background-color: transparent!important;">
+			 	<div class="column" style="background-color: transparent!important;padding-left: 0 !important;">
+			    <label for="prodBudget">PRODUCTION BUDGET</label>
+			    <input type="text" id="prodBudget" name="prodBudget" >
+			 	</div>
+				<div class="column" style="background-color: transparent!important;padding-top: 25px;padding-right: 0 !important;text-align: right;">
+			    <label for="undefined3" class="checkoption" style="font-style: normal !important;">UNDEFINED</label> 
+			    <input type="checkbox" id="undefined3" value="UNDEFINED3" name="undefined3" style="margin-right: 0 !important;" /><br>
+			 	</div>
+			</div>
+			<p style="margin-top: 0 !important;">An approximation of your budget for the production of a performance will allow us to estimate the scale of the project, and the number of participants.</p>
+		</div>
+
+		<h3>5.Almost there</h3>
+
+		<div style="padding: 50px 0;">
+			<input type="checkbox" id="privacy-policy" value="privacy-policy" name="privacy-policy" required />
+			<label for="privacy-policy" class="checklight">I agree with IAI's <a href="/systers/iamair/privacy-policy.html" class="blue">privacy policy</a></label> <br>
+		</div>
+
+		<input type="hidden" name="_subject" value="New submission 'Ask audiences' form!">
+		<input type="hidden" name="_next" value="https://hub.xpub.nl/systers/iamair/thanks.html">
+		<input type="submit" value="SEND FORM">
+	</form>
+
+	<script>
+	var loadFile = function(event) {
+		var image = document.getElementById('output');
+		image.src = URL.createObjectURL(event.target.files[0]);
+	};
+	</script> 
+
+	<script>
+		var checkbox1 = document.querySelector('#undefined');
+		var startDate = document.querySelector('#startDate');
+
+		// This function will update the date field's enabled/disabled
+		// attribute, depending on if the checkbox1 is checked
+		function updatestartDate() {
+		    
+		    if(checkbox1.checked) {
+		       startDate.disabled = true;
+		    }
+		    else {
+		       startDate.disabled = false;
+		    }
+		}
+		   
+		// Add an event listener to the change event, that causes
+		// the date field to be enabled/disabled when ever the checkbox
+		// is clicked and the value changes
+		checkbox1.addEventListener('change', function() {
+		       
+		   updatestartDate();
+		})
+		 
+		// Call this to ensure your date field is in correct state
+		// when the script is first run
+		updatestartDate();
+	</script>
+
+	<script>
+		var checkbox2 = document.querySelector('#undefined2');
+		var endDate = document.querySelector('#endDate');
+
+		// This function will update the date field's enabled/disabled
+		// attribute, depending on if the checkbox2 is checked
+		function updateendDate() {
+		    
+		    if(checkbox2.checked) {
+		       endDate.disabled = true;
+		    }
+		    else {
+		       endDate.disabled = false;
+		    }
+		}
+		   
+		// Add an event listener to the change event, that causes
+		// the date field to be enabled/disabled when ever the checkbox
+		// is clicked and the value changes
+		checkbox2.addEventListener('change', function() {
+		       
+		   updateendDate();
+		})
+		 
+		// Call this to ensure your date field is in correct state
+		// when the script is first run
+		updateendDate();
+	</script>
+
+	<script>
+		var checkbox3 = document.querySelector('#undefined3');
+		var prodBudget = document.querySelector('#prodBudget');
+
+		// This function will update the date field's enabled/disabled
+		// attribute, depending on if the checkbox3 is checked
+		function updateprodBudget() {
+		    
+		    if(checkbox3.checked) {
+		       prodBudget.disabled = true;
+		    }
+		    else {
+		       prodBudget.disabled = false;
+		    }
+		}
+		   
+		// Add an event listener to the change event, that causes
+		// the date field to be enabled/disabled when ever the checkbox
+		// is clicked and the value changes
+		checkbox3.addEventListener('change', function() {
+		       
+		   updateprodBudget();
+		})
+		 
+		// Call this to ensure your date field is in correct state
+		// when the script is first run
+		updateprodBudget();
+	</script>
+</body>
+</html>
+
+

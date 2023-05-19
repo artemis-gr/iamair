@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaeaea;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body.thanks {
+  background-color: #0033CC;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.blue {
+    color:#0033CC;
+}
+.black {
+    color: black;
+}
+
+.underline {
+  text-decoration-line: underline; 
+}
+
+.square {
+  height: 105px;
+  width: 105px;
+  background: black;
+  position: absolute;
+  right:0;
+  top:0;
+  padding-left: 5px;
+}
+
+img{max-width: 100%;}
+
+#speaker {
+  background:url(../images/rec1.png) no-repeat;
+  height: inherit;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 96px;
+  -webkit-text-stroke: 1px black;
+  color: #0033CC;
+  text-align: center;
+  margin: 0;
+  padding-right: 8.5%;
+}
+
+h3 {
+  background-color: black;
+  color: white;
+  display: block;
+  font-size: 40px;
+  margin-block-start: 0px!important;
+  margin-block-end: 0px!important;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: normal;
+  text-align: left;
+  padding-left: 30%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h4 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+h5 {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0;
+}
+
+label {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  color: #0033CC;
+  text-align: left;
+}
+
+label.option {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 25px;
+  color: black;
+  text-align: left;
+}
+
+label.checkoption {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  color: black;
+  margin-right: 5px;
+}
+
+label.checklight {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  color: black;
+  margin-right: 5px;
+}
+
+label.upload {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+  color: black;
+  text-align: left;
+  background: #D9D9D9;
+  border: 1px solid black;
+  margin: 25px;
+  padding: 0 10px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 5px 9px;
+  margin: 8px 0 20px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: black;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+textarea {
+  width: 100%;
+  padding: 5px 9px;
+  margin: 8px 0 20px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: black;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 5px 9px;
+  margin: 8px 0 20px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: black;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+input[type=tel], select {
+  width: 100%;
+  padding: 5px 9px;
+  margin: 8px 0 20px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: black;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+input[type=date], select {
+  width: 100%;
+  padding: 5px 9px;
+  margin: 8px 0 20px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: black;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: black;
+  color: #0033CC;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  font-size: 100px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+input[type=submit]:hover {
+  background-color: #0033CC;
+  color: black;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+div {
+  background-color: #eaeaea;
+  width: 40%;
+  margin: auto;
+}
+
+div#intro {
+  background-color: #eaeaea;
+  width: 60%;
+  margin: auto;
+}
+
+div#thanks {
+  background-color: #0033CC;
+  width: 50%;
+  margin: auto;
+}
+
+.intro-title {
+  width: 100%;
+  height: 105px;
+  flex-direction: row;
+  display: flex;
+  background: white!important;
+}
+
+.intro-thanks {
+  width: 100%;
+  height: 105px;
+  flex-direction: row;
+  display: flex;
+  background: #0033CC!important;
+}
+
+div.box {
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+div.box-upload {
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+div.box-aligned-center {
+  width: 100%!important;
+  text-align: center;
+  background: transparent;
+}
+
+div.box-aligned-right {
+  width: 100%!important;
+  text-align: right;
+  background: transparent;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  background-color: white;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  background-color: white;
+}
+
+p {
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+}
+
+p.intro {
+  font-weight: normal;
+  font-size: 30px;
+  text-align: left;
+  font-style: italic;
+}
+
+p.privacy {
+  font-weight: 400;
+  font-size: 30px;
+  text-align: left;
+  font-style: italic;
+  margin-top: 0;
+}
+
+p.thanks {
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  font-style: italic;
+  margin-top: 0;
+  color: white
+}
+
+input[type=radio] {
+  border: 1px solid black;
+  padding: 12px;
+  margin-right: 20px;
+  margin-bottom: -1px;
+  -webkit-appearance: none;
+}
+
+input[type=radio]:checked {
+  background-color: #0033CC;
+}
+
+input[type=radio]:focus {
+  outline-color: transparent;
+}
+
+input[type=checkbox] {
+  border: 1px solid black;
+  padding: 12px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: -1px;
+  -webkit-appearance: none;
+}
+
+input[type=checkbox]:checked {
+  background-color: #0033CC;
+}
+
+input[type=checkbox]:focus {
+  outline-color: transparent;
+}
+
+.thanks a {
+  color: black;
+}

@@ -1,0 +1,234 @@
+
+.navbar {
+    background: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar > ul {
+    margin: 0 auto;
+    max-width: 1600px;
+    min-height: 48px;
+    padding: 0 8px;
+    font-style: italic;
+    font-weight: medium;
+    justify-content: space-between;
+}
+
+.navbar ul > li:not(:first-child) {
+    margin-left: 10px;
+}
+.navbar ul > li:not(:last-child) {
+    margin-right: 10px;
+}
+.navbar > ul > li {
+    padding-top: 9px;
+    padding-bottom: 6px;
+}
+
+.navbar .logo {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 40px;
+}
+.navbar .languages {
+    justify-content: center;
+}
+.navbar .languages ul {
+    flex-wrap: wrap;
+}
+.navbar .languages li:not(:first-child) {
+    margin-left: 0px !important;
+}
+.navbar .languages li:not(:last-child) {
+    margin-right: 10px;
+}
+.navbar .speaker {
+    padding-top: 3px;
+    padding-bottom: 0;
+}
+
+/**********************modal1 contact*************************/
+
+.modal-window1 {
+    position: fixed;
+    /* background-color: rgba(200, 200, 200, 0.75); */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .modal-window1:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .modal-window1 > div {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    margin: 10% auto;
+    padding: 2rem;
+    background: #eaeaea;
+    color: black;
+  }
+  
+  .modal-window1 header {
+    font-weight: bold;
+  }
+  .modal-window1 h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+
+/**********************modal2 book*************************/
+/* 
+.modal-window2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .modal-window2:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .modal-window2 > div {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    margin: 10% auto;
+    padding: 2rem;
+    background: #eaeaea;
+    color: black;
+  }
+  
+  .modal-window2 header {
+    font-weight: bold;
+  }
+  .modal-window2 h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+
+   */
+
+/**********************modal3 become*************************/
+/* 
+.modal-window3 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .modal-window3:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .modal-window3 > div {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    margin: 10% auto;
+    padding: 2rem;
+    background: #eaeaea;
+    color: black;
+  }
+  
+  .modal-window3 header {
+    font-weight: bold;
+  }
+  .modal-window3 h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+ */
+  /**********************close modal*************************/
+
+  .modal-close1 {
+    color: black!important;
+    line-height: 70px;
+    width: 70px;
+    font-size: 35px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    text-decoration: none;
+  }
+  
+  .modal-close1:hover {
+    color: black;
+  }
+/* 
+  .modal-close2 {
+    color: black!important;
+    line-height: 70px;
+    width: 70px;
+    font-size: 35px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    text-decoration: none;
+  }
+  
+  .modal-close2:hover {
+    color: black;
+  }
+
+  .modal-close3 {
+    color: black!important;
+    line-height: 70px;
+    width: 70px;
+    font-size: 35px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    text-decoration: none;
+  }
+  
+  .modal-close3:hover {
+    color: black;
+  }
+   */
