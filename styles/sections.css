@@ -162,7 +162,6 @@
     padding: 0;
     background-color: #eaeaea;
     text-align: -moz-center;
-    margin-inline: 2.3%;
 }
 #audiences h2 {
     font-size: 76px;
@@ -248,7 +247,6 @@
         background-color: #eaeaea;
         padding: 0;
         text-align: -moz-center;
-        margin-inline: 2.7%;
     }
     #audiences > div {
         flex-direction: row;
