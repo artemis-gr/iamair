@@ -162,7 +162,7 @@
     padding: 0;
     background-color: #eaeaea;
     text-align: -moz-center;
-    margin-inline: 2.7%;
+    margin-inline: 2.3%;
 }
 #audiences h2 {
     font-size: 76px;
@@ -186,8 +186,23 @@
     font-style: italic;
 }
 
-#audiences li:last-of-type {
-    margin-bottom: 50px;
+#audiences div.audience-buttons {
+    background: black;
+    text-align: center;
+}
+
+#audiences div.audience-buttons a {
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 45px;
+}
+
+.audiences-button-left {
+    text-align: center!important;
+}
+
+.audiences-button-right {
+    text-align: center!important;
 }
 
 #audiences > div {
@@ -195,6 +210,7 @@
     flex-direction: column;
     /* max-width: 75%; */
     padding-left: 0!important;
+    
 }
 #audiences > h2 {
     display: flex;
@@ -206,44 +222,27 @@
     text-align: right;
 }
 .audiences-options {
-    padding-top: 40px;
     background: white;
     /* padding-right: 2.5%;
     margin-left: 2.5%; */
-}
-.btn-book {
-    background-color: black;
-    margin: 20px 10px;
-    transform: skew(-30deg);
-    display: inline-block;
+    border: 1px solid black;
 }
 
-.btn-book a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    transform: skew(30deg);
-    font-size: 45px;
-    padding: 10px 100px;
+.audiences-left {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-align: left !important;
+    margin-left: 40px;
+    border-right: 1px solid black;
 }
 
-.btn-become {
-    background-color: black;
-    margin: 20px 10px;
-    transform: skew(-30deg);
-    display: inline-block;
+.audiences-right {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-align: right !important;
+    margin-right: 40px;
 }
 
-.btn-become a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    transform: skew(30deg);
-    font-size: 45px;
-    padding: 10px 100px;
-}
 @media only screen and (min-width: 992px) {
     #audiences {
         background-color: #eaeaea;
@@ -264,7 +263,7 @@
         max-width: 1600px;
     }
     #audiences h2 {
-        font-size: 96px;
+        font-size: 150px;
     }
     #audiences h3 {
         font-size: 43px;
@@ -273,30 +272,22 @@
         font-size: 30px;
         padding-bottom: 5px;
     }
-    .btn-book a {
-        padding: 10px 50px;
-    }
-    .btn-become a {
-        padding: 10px 50px;
-    }
 }
 
 /******************************************************************/
 .people-container {
-    margin-inline: 2.7%;
     margin-top: 50px;
 }
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
-  padding-top: ;
+  gap: 28px;
+  padding-top: 100px;
 }
 
 .image-gallery > li {
-  /* flex-basis: 330px;  */
-  /* width: 235px; */
+    flex-basis: 330px; /* width: 235px; */
 }
 
 .image-gallery li img {
