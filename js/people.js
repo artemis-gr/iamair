@@ -510,7 +510,7 @@ var people = [
         specialization: "Photography/Film, Writing/Storytelling",
         photo: "images/people/aiyden.jpg",
     },
-    {
+/*     {
         name: "Nola Bokun",
         username: "Nola",
         email: "nolabokun@gmail.com",
@@ -523,8 +523,8 @@ var people = [
         country: "Croatia",
         talents: "Maybe I wouldn't call it a talent but I am a product designer interested in spatial design and scenography.",
         specialization: "Mediation/Education, Writing/Storytelling, Photography/Film",
-        photo: "images/people/nola.jpg",
-    },
+        photo: "",
+    }, */
     {
         name: "Peter van Waart",
         username: "Peter van Waart",
