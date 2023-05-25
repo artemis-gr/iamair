@@ -29,6 +29,7 @@
 .what-column {
     background-color: white;
     border: 1px solid black;
+    height: fit-content;
 }
 
 #what-is-aimair {
