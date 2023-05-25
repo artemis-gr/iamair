@@ -21,6 +21,7 @@
     max-width: 1ch;
     line-break: anywhere;
     color: #0015D0;
+    -webkit-text-stroke: 1px black;
 }
 
 /******************************************************************/
