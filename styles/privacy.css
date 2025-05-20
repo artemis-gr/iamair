@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0040FF;
+    color: white;
+}
+
+#intro {
+    max-width: 90%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.privacy-title h1 {
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1em;
+    color: #FFFFFF;
+}
+
+.privacy-title {
+    max-width: 70%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 3.75rem;
+}
+
+#intro p {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: #FFFFFF;
+}
+
+#intro h5 {
+    max-width: 100%;
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width: 900px) {
+    #intro {
+        padding: 0 4rem 4rem 4rem;
+        max-width: 70%;
+        text-align: justify;
+    }
+
+    .privacy-title h1 {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 124px;
+    }
+    
+    .privacy-title {
+        padding: 0 4rem 0 4rem;
+        max-width: 70%;
+    }
+    
+    #intro p {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.5em;
+        line-height: 1.2;
+        margin-bottom: 40px;
+    }
+    
+    #intro h5 {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+

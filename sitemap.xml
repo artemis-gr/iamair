@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.iamair.nl/</loc>
+  <lastmod>2024-04-10T13:24:29+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.iamair.nl/join-audiences.html</loc>
+  <lastmod>2024-04-10T06:45:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.iamair.nl/shop.html</loc>
+  <lastmod>2024-04-10T07:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.iamair.nl/index.html</loc>
+  <lastmod>2024-04-10T13:24:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.iamair.nl/privacy-policy.html</loc>
+  <lastmod>2024-04-10T07:39:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

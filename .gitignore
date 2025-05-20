@@ -1,0 +1,5 @@
+# Ignore only the 'people' subfolder
+images/people/
+
+# Allow other image folders
+!images/

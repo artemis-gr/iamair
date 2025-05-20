@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/join-audiences.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+  <script src="https://unpkg.com/@botpoison/browser" async></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-top">
+      <div id="hamburger-menu" class="navbar-left">
+        <button class="hamburger-button"></button>
+        <div class="nav-links">
+          <a href="index.html">IAMAIR</a>
+          <a href="#" style="pointer-events: none">AUDIENCES</a>
+          <a href="index.html#mission">MISSION</a>
+          <a href="shop.html">SHOP</a>
+          <a href="mailto:contact@iamair.nl">CONTACT</a>
+        </div>
+      </div>    
+      <div class="navbar-right">
+        <a href="index.html">IAI</a>
+      </div>
+    </div>          
+  </div>
+  <div id="join">
+    <div class="join-title">
+      <h2>JOIN<br>AUDIENCES</h2>
+    </div>
+    <div class="join-text">
+      <p>We welcome people of all backgrounds, educations, ages, appearances, and beliefs to join our community of audiences, and support our 
+mission to 
+empower audiences and artists agency in cultural institutions.</p>
+      <p>Fill the form below and be the first to know when and where our interventions will happen, receive our open calls and get invited in 
+our events with 
+free access to cultural institutions. It's completely free, and you don't need any prior experience or talent.</p>
+      <p>We highly value your privacy and won't sell your data to third-party entities. We only use your contact information to keep you 
+updated. If you wish 
+to delete your informations, please contact us at <a href="mailto:contact@iamair.nl">contact@iamair.nl</a>, and we'll promptly take care of 
+it.</p>
+    </div>
+  </div>
+
+  <div class="subscribe">
+    <h2>SUBSCRIBE</h2>
+  </div>
+  <form
+    id="subscribeForm" 
+    action="https://submit-form.com/ITLoIgpTj" 
+    data-botpoison-public-key="pk_856e51d4-b841-460b-a863-d343394ff2e5"
+    method="POST"
+    novalidate>
+  <div class="form-container">
+    <div class="info-and-participation">
+      <div class="basic-info">
+        <h3>CONTACT</h3>
+        <input type="text" id="name" name="Name" class="info-input" placeholder="NAME" required><br>
+
+        <input type="email" id="email" name="Email" class="info-input" placeholder="EMAIL" required>
+
+        <p>Your name and contact are kept private in our database. We will use your contact to keep you informed about important updates and 
+events.</p>
+      
+        <input type="text" id="username" name="Username" class="info-input" placeholder="USERNAME" required><br>
+        <input type="text" id="city" name="City" class="info-input" placeholder="CITY"><br>
+        <input type="text" id="country" name="Country" class="info-input" placeholder="COUNTRY">
+        <div class="upload">
+          <input type="hidden" id="photo" name="Picture" role="uploadcare-uploader" data-public-key="eaac891cb05ac271c750"/>
+          <p class="upload-text">Upload a selfie or a portrait of yourself. Your face and eyes should face the camera. This picture will be 
+visible on the front page of our website.</p><br>
+        </div>
+
+      </div>      
+    </div>
+
+    <div class="talent">
+      <h3>TALENTS</h3>
+      <label for="mediation-education" class="checkoption label-as-button">MEDIATION/EDUCATION</label> 
+      <input type="checkbox" id="mediation-education" value="yes" name="MEDIATION/EDUCATION" /><br>
+
+      <label for="acting-theatre" class="checkoption label-as-button">ACTING/THEATRE</label> 
+      <input type="checkbox" id="acting-theatre" value="yes" name="ACTING/THEATRE" /><br>
+
+      <label for="writing-storytelling" class="checkoption label-as-button">WRITING/STORYTELLING</label> 
+      <input type="checkbox" id="writing-storytelling" value="yes" name="WRITING/STORYTELLING" /><br>
+
+      <label for="performance-dance" class="checkoption label-as-button">PERFORMANCE/DANCE</label> 
+      <input type="checkbox" id="performance-dance" value="yes" name="PERFORMANCE/DANCE" /><br>
+
+      <label for="visual-conceptual" class="checkoption label-as-button">VISUAL/CONCEPTUAL ART</label> 
+      <input type="checkbox" id="visual-conceptual" value="yes" name="VISUAL/CONCEPTUAL ART" /><br>
+
+      <p>You do not need any talent to take part. These informations will just help us to understand your background, and why you might be 
+interested in our 
+project.</p>
+  
+      <textarea id="about-you" name="About" class="label-about" placeholder="WRITE HERE ABOUT YOU"></textarea>
+      <div class="picture-and-privacy">
+        <div class="privacy">
+          <input type="checkbox" id="privacy-policy" value="checked" name="Privacy policy" required />
+          <label for="privacy-policy" class="checklight">I agree with IAI's <a href="privacy-policy.html" class="blue" target="_blank">privacy 
+policy</a></label><br><br>
+        </div>
+        <input type="hidden" name="_redirect" value="https://www.iamair.nl/thanks.html">
+        <button type="submit" id="submitFormButton">SEND FORM</button>
+      </div>
+    </div>
+  </div>
+  </form>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Hamburger button functionality
+    document.querySelector('.hamburger-button').addEventListener('click', function() {
+      this.classList.toggle('active'); // Toggle the 'active' class on the hamburger button
+    });
+
+    // Checkbox functionality
+    const checkboxes = document.querySelectorAll('.participation input[type="checkbox"], .talent input[type="checkbox"]');
+    checkboxes.forEach(function(checkbox) {
+      // Initial class application based on checked state
+      toggleLabelClass(checkbox);
+
+      // Event listener for changes
+      checkbox.addEventListener('change', function() {
+        toggleLabelClass(checkbox);
+      });
+    });
+
+    function toggleLabelClass(checkbox) {
+      const label = document.querySelector('label[for="' + checkbox.id + '"]');
+      if (checkbox.checked) {
+        label.classList.add('checked-label');
+      } else {
+        label.classList.remove('checked-label');
+      }
+    }
+  });
+
+  $(document).ready(function() {
+    // Delay the execution of the function to ensure the Uploadcare widget is fully loaded
+    setTimeout(function() {
+      // Select the button and change its text
+      $('.uploadcare--widget__button_type_open').text('UPLOAD PICTURE');
+    }, 10); // Adjust the delay time as needed
+  });
+  </script>
+  <script>
+    // Ensure Botpoison integration is tied to the correct form and button
+    var formElement = document.getElementById("subscribeForm");
+    var buttonElement = document.getElementById("submitFormButton");
+
+    formElement.addEventListener("botpoison-challenge-start", function () {
+      // Disable button and show loading text
+      buttonElement.setAttribute("disabled", "disabled");
+      buttonElement.innerText = "Processing...";
+    });
+
+    formElement.addEventListener("botpoison-challenge-success", function () {
+      // Re-enable button and restore original text
+      buttonElement.removeAttribute("disabled");
+      buttonElement.innerText = "SEND FORM";
+    });
+
+    formElement.addEventListener("botpoison-challenge-error", function () {
+      // Re-enable button, restore text, and alert the user
+      buttonElement.removeAttribute("disabled");
+      buttonElement.innerText = "SEND FORM";
+      alert("An error occurred during verification. Please try submitting the form again.");
+    });
+  </script>
+
+</body>
+</html>
+

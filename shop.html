@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="w-100 h-100">
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+            body {
+                font-family: "Scada", sans-serif;
+            }
+        </style>
+        <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="styles/portfolio.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-top"> <!-- New wrapper div -->
+                <div id="hamburger-menu" class="navbar-left">
+                    <button class="hamburger-button"></button>
+                    <div class="nav-links">
+                        <a href="index.html">IAMAIR</a>
+                        <a href="index.html#audiences">AUDIENCES</a>
+                        <a href="index.html#mission">MISSION</a>
+                        <a href="#" style="pointer-events: none">SHOP</a>
+                        <a href="mailto:contact@iamair.nl">CONTACT</a>
+                    </div>
+                </div>    
+                <div class="navbar-right">
+                    <a href="index.html">IAI</a>
+                </div>
+            </div>          
+        </div>
+        <div class="portfolio">
+            <h2>IAMAIR IS CURRENTLY WORKING ON ITS DEBUTS AND LOOKING FOR ARTISTIC AND INSTITUTIONAL PARTNERSHIPS. INTERESTED? <br><a 
+href="mailto:contact@iamair.nl">CONTACT@IAMAIR.NL</a></h2>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('.hamburger-button').addEventListener('click', function() {
+                    this.classList.toggle('active'); // Toggle the 'active' class on the hamburger button
+                });
+            });
+        </script>
+    </body>
+</html>
+

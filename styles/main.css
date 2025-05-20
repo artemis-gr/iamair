@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+    font-family: "Scada", sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* Default margins */
+
+html,
+body,
+header,
+footer,
+main,
+section,
+div,
+p,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.blue {
+    color: rgb(0, 0, 238);
+}
+

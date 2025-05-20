@@ -1,0 +1,683 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Scada", sans-serif;
+}
+
+body {
+    background:linear-gradient(179.99deg, #0040FF -8.14%, rgba(143, 0, 255, 0.21) 140.36%);
+    min-height: 100vh; /* Ensures the background covers at least the full viewport height */
+    /*background-attachment: fixed;  Optional: Makes the background fixed during scrolling */
+}
+
+#submitFormButton[disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+#join {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 3.75rem;
+}
+
+.join-title h2 {
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.join-text p {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: #FFFFFF;
+}
+  
+
+.join-text a {
+    display: inline; /* Ensure the link displays inline with the text */
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
+    color: #FFFFFF;
+}
+
+.join-text a:hover {
+    color: #0040FF;
+}
+
+.subscribe {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.subscribe h2 {
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.participation  input,
+.talent input {
+    display: none;
+}
+
+.talent {
+    margin-top: -1em;
+}
+
+.label-as-button {
+    display: inline-block;
+    padding: 0.5em 2em 0.5em 1em;
+    margin: 0.2em 0;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: white; 
+    color: #0040FF;
+    font-family: "Scada", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    width: -moz-available;
+    width: -webkit-fill-available;
+}
+
+.talent .label-as-button {
+    text-align: center;
+}
+
+/* Style for when the checkbox is checked */
+.checked-label {
+    background-color: transparent; 
+    border: 2px solid #0040FF;
+}
+
+.privacy .checked-label {
+    background-color: transparent; 
+    border: none;
+}
+
+.form-container {
+    display: block; /* Stack children vertically */
+    width: 100%; /* Container takes up full width */
+    padding-bottom: 1rem;
+}
+
+.info-and-participation, .talent {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: -ms-available;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+/* Default placeholder style with lower opacity */
+#name::placeholder,
+#email::placeholder,
+#username::placeholder,
+#city::placeholder,
+#country::placeholder {
+    opacity: 0.3; /* Lower opacity by default */
+    color: #0040FF!important;
+}
+
+/* Increase opacity of placeholder when the input is not focused */
+#name:not(:focus)::placeholder,
+#email:not(:focus)::placeholder,
+#username:not(:focus)::placeholder,
+#city:not(:focus)::placeholder,
+#country:not(:focus)::placeholder {
+    opacity: 1; /* Higher opacity when not focused */
+}
+
+.info-input {
+    display: inline-block;
+    padding: 0.25em 2em 0.25em 1em;
+    margin: 0.2em 0;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: white; 
+    width: -moz-available;
+    width: -webkit-fill-available;
+    font-family: "Scada", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    color: #0040FF;
+    
+}
+
+.info-input:-webkit-autofill,
+.info-input:-webkit-autofill:hover, 
+.info-input:-webkit-autofill:focus, 
+.info-input:-webkit-autofill:active {
+    -webkit-text-fill-color: #0040FF !important; /* Force change text color */
+    transition: background-color 5000s ease-in-out 0s; /* Optional: Attempt to prevent the background from changing */
+}
+
+.info-input:-moz-ui-autofill {
+    color: #0040FF !important;
+}
+
+.info-and-participation h3,
+.talent h3,
+.upload h3 {
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8em;
+    line-height: 1em;
+    color: #FFFFFF;
+}
+
+.basic-info p,
+.participation p,
+.talent p,
+.upload p {
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.2em;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1rem 1rem;
+}
+
+
+input[type=submit] {
+    display: block;
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 62px;
+    text-align: center;
+    background-color: white;
+    color: #0040FF;
+    padding: 2px 50px;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: white; 
+    width: -moz-available;
+    width: -webkit-fill-available;
+}
+
+
+#submitFormButton {
+    display: block;
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center;
+    background-color: white;
+    color: #0040FF;
+    padding: 0.25em 1em 0.25em 1em;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: white;
+    width: -moz-available;
+    width: -webkit-fill-available;
+}
+
+#submitFormButton:hover {
+    background-color: transparent;
+    border: 2px solid #0040FF;
+} 
+input[type=submit]:hover {
+    background-color: transparent;
+    border: 2px solid #0040FF;
+  }
+
+.upload-picture {
+    display: inline-block;
+    padding: 19px 50px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: white; 
+    color: #0040FF;
+    font-family: "Scada", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 25px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+}
+.uploadcare--widget__button_type_open {
+    display: inline-block;
+    padding: 0.45em 2em 0.45em 1em;
+    margin: 0.2em 0;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: white; 
+    color: #0040FF;
+    font-family: "Scada", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    width: -moz-available;
+    width: -webkit-fill-available;
+}
+
+.uploadcare--widget__button_type_open:hover {
+    background-color: transparent; 
+    border: 2px solid #0040FF;
+    display: inline-block;
+    padding: 0.45em 2em 0.45em 1em;
+    margin: 0.2em 0;
+    cursor: pointer;
+    border-radius: 100px;
+    color: #0040FF;
+    font-family: "Scada", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    transition: none;
+}
+
+.upload .uploadcare--widget__button_type_open {
+    text-transform: uppercase; /* Transform text to uppercase */
+    text-align: left;
+}
+
+.uploadcare--widget {
+    width: -moz-available;
+    width: -webkit-fill-available;
+  }
+
+.checklight {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.blue {
+    color: #0040FF;
+}
+
+
+/* Hide the actual checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Custom checkbox styles */
+input[type="checkbox"] + label.checklight:before {
+    content: '';
+    display: inline-block;
+    width: 20px; 
+    height: 21px; 
+    background: white; 
+    border: 2px solid white; 
+    border-radius: 50%; 
+    vertical-align: middle;
+    margin-right: 10px; 
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Styles when the checkbox is checked */
+input[type="checkbox"]:checked + label.checklight:before {
+    background: #0040FF; /* Background color when checked */
+    border-color: #0040FF; /* Border color to match the background, maintaining size */
+}
+
+
+.participation {
+    display: flex; /* Enables Flexbox for the container */
+}
+
+.participation-left, .participation-right {
+    flex: 1; /* Each child takes up an equal amount of space */
+}
+
+.participation-right {
+    align-self: center; /* Centers this child vertically within the container */
+}
+
+.privacy {
+    padding-top: 1rem;
+}
+
+.label-about {
+    text-align: center;
+    padding: 0.45em 2em 0.45em 1em;
+    margin: 0.2em 0;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: white;
+    color: #0040FF;
+    font-family: "Scada", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    height: 2.5rem;
+    overflow-y: hidden;
+}
+
+.label-about::placeholder {
+    color: #0040FF;
+    opacity: 1;
+}
+
+@media (min-width: 900px) {
+    .form-container {
+        display: flex;
+        width: 700px;
+        margin-left: 0; 
+        padding-left: 4rem;
+        padding-bottom: 20px;
+    }
+    .info-and-participation {
+        flex: 1 1 45%; 
+        min-width: 100px; 
+        padding-right: 15px;
+    }
+    
+    .talent {
+        flex: 2 1 55%;
+        min-width: 200px; 
+        margin-top: 0;
+    }
+    #join {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+    .join-text p {
+        padding-left: 4rem;
+        max-width: 65%;
+        margin-bottom: 40px;
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+    	font-size: 2.5em;
+    	line-height: 1.2;
+        color: #FFFFFF;
+        text-align: justify;
+    }
+    .join-title h2 {
+        margin-top: 0;
+        padding: 0 4rem 0 4rem;
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 150px;
+        line-height: 150px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    .subscribe {
+        padding-left: 0;
+        padding-right:0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .subscribe h2 {
+        font-family: "Scada", sans-serif;
+        padding: 0 4rem 0 4rem;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 119px;
+        line-height: 148px;
+        color: #FFFFFF;
+        margin: 0;
+    }
+
+    .info-and-participation h3,
+    .talent h3,
+    .upload h3 {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        color: #FFFFFF;
+    }
+
+    .label-about {
+        text-align: center;
+        padding: 5px 25px;
+        margin: 5px 0;
+        cursor: pointer;
+        border-radius: 100px;
+        border: 2px solid white;
+        background-color: white;
+        color: #0040FF;
+        font-family: "Scada", sans-serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        width: -moz-available;
+        width: -webkit-fill-available;
+        height: 90px;
+        overflow-y: hidden;
+    }
+
+    .info-input {
+        display: inline-block;
+        padding: 0px 25px;
+        margin: 5px 0;
+        cursor: pointer;
+        border-radius: 100px;
+        border: 2px solid white;
+        background-color: white; 
+        width: -moz-available;
+        width: -webkit-fill-available;
+        font-family: "Scada", sans-serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #0040FF;
+        
+    }
+    
+    .upload-picture {
+        padding: 0px 25px;
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+    .label-as-button {
+        display: inline-block;
+        padding: 0px 25px;
+        margin: 5px 0;
+        cursor: pointer;
+        border-radius: 100px;
+        border: 2px solid white;
+        background-color: white; 
+        color: #0040FF;
+        font-family: "Scada", sans-serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        width: -moz-available;
+        width: -webkit-fill-available;
+       
+    }
+
+    .checked-label {
+        background-color: transparent; 
+        border: 2px solid #0040FF;
+    }
+    
+    .privacy .checked-label {
+        background-color: transparent; 
+        border: none;
+    }
+
+    .basic-info p,
+    .participation p,
+    .talent p,
+    .upload p {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 5px 0;
+    }
+
+    #output {
+        margin-bottom: 15px;
+    }
+    
+    p.upload-text {
+        margin-top: 0px;
+    }
+
+    input[type=submit] {
+        padding: 0px 30px;
+    }
+    button {
+        padding: 0px 30px;
+    }
+    .checklight {
+        font-size: 15px;
+    }
+    input[type="checkbox"] + label.checklight:before {
+        width: 15px; /* Adjusted width to match the height for a perfect circle */
+        height: 16px; /* Height of the custom checkbox */
+    }
+    .privacy {
+        padding-top: 20px;
+    }
+    
+    .uploadcare--widget__button_type_open {
+        display: inline-block;
+        padding: 0px 25px;
+        margin: 5px 0;
+        cursor: pointer;
+        border-radius: 100px;
+        border: 2px solid white;
+        background-color: white; 
+        color: #0040FF;
+        font-family: "Scada", sans-serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        width: -moz-available;
+        width: -webkit-fill-available;
+    }
+
+    .uploadcare--widget__button_type_open:hover {
+        padding: 0px 25px;
+        margin: 5px 0;
+        font-size: 18px;
+        line-height: 25px;
+        background-color: transparent; 
+        border: 2px solid #0040FF;
+    }
+    #submitFormButton {
+        display: block;
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        background-color: white;
+        color: #0040FF;
+        padding: 0px 50px;
+        margin: 0 0 20px 0;
+        cursor: pointer;
+        border-radius: 100px;
+        border: 2px solid white;
+        background-color: white;
+        width: -moz-available;
+        width: -webkit-fill-available;
+    }
+}
+
+
+.uploadcare--dialog__panel .uploadcare--menu, .uploadcare--dialog__panel .uploadcare--menu__item {
+    display: none;
+}
+
+.uploadcare--button_size_big {
+    cursor: pointer;
+}
+.uploadcare--button_primary {
+    background: #0040FF;
+    border-color: #0040FF;
+    color: #fff;
+    font-family: "Scada", sans-serif!important;
+}
+.uploadcare--text_size_extra-large {
+    font-family: "Scada", sans-serif!important;
+}
+.uploadcare--dialog__powered-by {
+    display: none;
+}
+.uploadcare--dialog__close {
+    cursor: pointer;
+}
+.uploadcare--footer__button:first-of-type {
+    cursor: pointer;
+}
+.uploadcare--footer__button:nth-of-type(2) {
+    cursor: pointer;
+}
+.uploadcare--widget__file-size {
+    display: none;
+}
+.uploadcare--widget {
+    text-align: center;
+}
+.uploadcare--link.uploadcare--widget__file-name {
+    color: #0040FF;
+    text-decoration: none;
+}
+.uploadcare--link.uploadcare--widget__file-name:hover {
+    text-decoration: underline;
+}
+
+

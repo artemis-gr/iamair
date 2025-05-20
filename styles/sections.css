@@ -1,0 +1,451 @@
+.what-sections {
+    width: 100%;
+}
+
+#what-is-aimair {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 2.5rem;
+}
+#what-is-aimair h2 {
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.6em;
+    line-height: 1.2em;
+    color: #0040FF;
+}
+#what-is-aimair p {
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.25em;
+    color: #0040FF;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+#what-is-aimair a {
+    color: #0040FF;
+}
+
+.label-homepage {
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    margin-top: 0.3em;
+    color: #0040FF;
+}
+.image-homepage {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: -ms-available;
+    height: 10em;
+    object-fit: cover;
+}
+
+#footer {
+    width: 20%;
+    float: right;
+    margin-top: -20%;
+}
+
+.social-icons-container {
+    margin: 1em;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.insta-icon {
+    max-width: 100%;
+    height: auto;
+}
+
+/******************************************************************/
+
+#for-who {
+    padding: 0.75rem;
+    color: white;
+    background: #0040FF;
+}
+
+#for-who .what-column:first-child {
+    margin-bottom: 1rem;
+}
+
+#for-who .what-column:nth-child(2) {
+    margin-bottom: 0.6rem;
+}
+
+#for-who h3 {
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.3em;
+}
+#for-who p {
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    
+    text-align: left;
+}
+
+/******************************************************************/
+#audiences {
+    padding: 0.75rem;
+}
+#audiences div.audiences-title {
+    color: #0040FF;
+}
+#audiences div.audiences-options a{
+    color: #8F00FF;
+    text-decoration: none;
+}
+#audiences div.audiences-options a:visited{
+    color: #8F00FF;
+    text-decoration: none;
+}
+
+#audiences div.audiences-options a:hover {
+    color: #0040FF;
+}
+
+#audiences h2 {
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+
+/******************************************************************/
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5%;
+    padding-top: 0;
+}
+
+.image-gallery > li {
+    flex-basis: 32.3%;
+    padding-bottom: 1.5%;
+}
+
+.image-gallery li img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+
+/**************************faq******************************/
+#mission {
+    margin-top: 0;
+    margin-bottom: 4rem;
+    padding: 0.75rem;
+    background: linear-gradient(180deg, rgba(3, 63, 242, 0.89) -3.01%, 
+#8F00FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.mission-text {
+    display: grid;
+    grid-template-columns: 0.5fr 10fr;
+}
+
+#mission h2 {
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4em;
+    line-height: 1.2em; 
+}
+
+#mission h3 {
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+}
+
+.red {
+    color: red;
+}
+
+/**************************media queries******************************/
+
+@media (min-width: 600px) {
+    .label-homepage {
+        font-weight: bold;
+        font-size: 2.1em;
+        color: #0040FF;
+        margin-top: 1rem;
+    }
+
+    #what-is-aimair {
+        padding-left: 4rem;
+    }
+    #what-is-aimair h2 {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6em;
+        line-height: 1.2em;
+        color: #0040FF;
+    }
+    #what-is-aimair p {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 1.2em;
+        color: #0040FF;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+    .what-sections {
+        max-width: 65%;
+    }
+    #audiences h2 {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6em;
+        line-height: 1.2em;
+    }
+    .image-homepage {
+        width: -webkit-fill-available;
+        width: -moz-available;
+        width: -ms-available;
+        height: 26em;
+        object-fit: cover;
+    }
+
+    #for-who {
+        padding: 2rem 0 1rem 4rem;
+    }
+
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5%;
+        padding-top: 3rem;
+    }
+
+    .image-gallery > li {
+        flex-basis: 18.8%;
+        padding-bottom: 1.5%;
+    }
+    
+    .image-gallery li img {
+      object-fit: cover;
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    #mission {
+        margin-top: 0;
+        margin-bottom: 4rem;
+        padding: 1rem 4rem;
+        background: linear-gradient(180deg, rgba(3, 63, 242, 0.89) 
+-3.01%, #8F00FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        max-width: 60%;
+    }
+
+    .mission-text {
+        display: grid;
+        grid-template-columns: 0.5fr 10fr;
+    }
+    #mission h2 {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6em;
+        line-height: 1.2em;  
+    }
+    
+    #mission h3 {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.4em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    #footer {
+        float: right;
+        margin: -5rem 1rem 1rem 0;
+        width: 5em;
+    }
+    .social-icons-container {
+        margin: 0;
+    }
+    .insta-icon {
+        max-width: 5em;
+        height: auto;
+    }
+    
+    
+}
+
+@media (min-width: 900px) {
+    .label-homepage {
+        font-weight: bold;
+        font-size: 2.1em;
+        color: #0040FF;
+        margin-top: 1rem;
+    }
+
+    #what-is-aimair {
+        padding-left: 4rem;
+        padding-top: 4rem;
+    }
+    #what-is-aimair h2 {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6em;
+        line-height: 1.2em;
+        color: #0040FF;
+    }
+    #what-is-aimair p {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 1.2em;
+        color: #0040FF;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+    .what-sections {
+        max-width: 66%;
+    }
+    .image-homepage {
+        width: -webkit-fill-available;
+        width: -moz-available;
+        width: -ms-available;
+        height: 26em;
+        object-fit: cover;
+    }
+
+    #for-who {
+        padding: 2rem 0 1rem 4rem;
+    }
+
+    
+    #for-who h3 {
+	font-size: 3.5em;
+   	line-height: 1.5em;
+    }
+    #for-who p {
+	font-size: 2em;
+   	line-height: 1.2em;
+        max-width: 80%;
+        margin-bottom: 40px;
+        text-align: justify;
+    }
+
+    #audiences {
+        padding: 30px 60px 0px 60px;
+    }
+
+    #audiences h2 {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6em;
+        line-height: 1.2em;
+    }
+    
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5%;
+        padding-top: 3.5rem;
+    }
+
+    .image-gallery > li {
+        flex-basis: 18.8%;
+        padding-bottom: 1.5%;
+    }
+    
+    .image-gallery li img {
+      object-fit: cover;
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    #mission {
+        margin-top: 0;
+        margin-bottom: 4rem;
+        padding: 1rem 4rem;
+        background: linear-gradient(180deg, rgba(3, 63, 242, 0.89) 
+-3.01%, #8F00FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        max-width: 60%;
+    }
+
+    .mission-text {
+        display: grid;
+        grid-template-columns: 0.5fr 10fr;
+    }
+    
+    #mission h2 {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6em;
+        line-height: 1.2em;  
+    }
+    
+    #mission h3 {
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.4em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    #footer {
+        float: right;
+        margin: -5rem 1rem 1rem 0;
+        width: 5em;
+    }
+    .social-icons-container {
+        margin: 0;
+    }
+    .insta-icon {
+        max-width: 4em;
+        height: auto;
+    }
+}
+

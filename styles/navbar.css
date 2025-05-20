@@ -1,0 +1,128 @@
+.navbar {
+    display: flex; 
+    flex-direction: column; 
+    width: 100%;
+    align-items: center; 
+    background: linear-gradient(180deg, #0040FF -8.15%, rgba(255, 255, 255, 0) 100%);
+    overflow-x: hidden; 
+}
+
+.navbar-top {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+}
+
+.navbar-left, .navbar-right {
+    padding: 0.5rem;
+}
+
+.navbar-right {
+    font-family: "Scada", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 31px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger-button {
+    background-image: url('../images/hamburger.svg');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    border: none; 
+    background-color: transparent; 
+    cursor: pointer;
+    border-radius: 0;
+	
+}
+
+.hamburger-button.active + .nav-links {
+    display: block;
+}
+
+.nav-links {
+    display: none; /* Hidden by default */
+    width: auto; /* Adjust width as needed */
+    color: white;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflow */
+    text-overflow: ellipsis; /* Adds ellipsis to overflowed text */
+    margin-top: -21%;
+    padding-left: 2.5rem;
+}
+.nav-links a {
+    display: block;
+    color: white;
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.1em;
+    text-decoration: none;
+}
+.nav-links a:hover {
+    background-color: #0040FF;
+}
+
+@media only screen and (min-width: 900px) {
+    .navbar-top {
+        display: flex; 
+        justify-content: space-between; 
+        width: 100%; 
+    }
+
+    .navbar-left, .navbar-right {
+        padding: 16px;
+    }
+
+    .navbar {
+        width: 100%;
+        align-items: center; 
+        background: linear-gradient(180deg, #0040FF -8.15%, rgba(255, 255, 255, 0) 75%);
+        overflow-x: hidden; 
+	    margin-bottom: 60px;
+    }
+
+    .navbar-right {
+        font-size: 60px;
+        line-height: 60px;
+        padding: 10px 16px;
+    }
+
+    .hamburger-button {
+        width: 50px; 
+        height: 50px;  
+        padding: 0px;     
+    }
+    
+    .nav-links {
+        margin-top: -56px;
+    	padding-left: 5rem;
+        display: none; /* Hidden by default */
+        width: auto; /* Adjust width as needed */
+        color: white;
+        white-space: nowrap; /* Prevents text from wrapping */
+        overflow: hidden; /* Hides overflow */
+        text-overflow: ellipsis; /* Adds ellipsis to overflowed text */
+    }
+
+    .nav-links a {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 62px;
+    }
+    .nav-links a:hover {
+        background-color: #0040FF;
+    }
+}
+

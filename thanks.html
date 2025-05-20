@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/navbar.css">
+	<link rel="stylesheet" href="styles/thanks.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="navbar">
+		<div class="navbar-top">
+			<div id="hamburger-menu" class="navbar-left">
+				<button class="hamburger-button"></button>
+				<div class="nav-links">
+					<a href="index.html">IAMAIR</a>
+					<a href="join-audiences.html">AUDIENCES</a>
+					<a href="index.html#mission">MISSION</a>
+					<a href="shop.html">SHOP</a>
+					<a href="mailto:contact@iamair.nl">CONTACT</a>
+				</div>
+			</div>    
+			<div class="navbar-right">
+				<a href="index.html">IAI</a>
+			</div>
+		</div>          
+	</div>
+    <div id="thanks">
+        <p class="thanks">Thank you  !<br>We have received your information and will review it shortly. You should receive a confirmation email from us within the next few 
+minutes. If you do not receive a confirmation email, please check your spam or junk folder, as it may have been filtered there. If you still cannot find it, please contact us 
+at <a href="mailto:contact@iamair.nl">contact@iamair.nl</a> and we will assist you. Thank you for taking part in our community. We look forward to connecting with you soon.
+        </p>
+    </div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			document.querySelector('.hamburger-button').addEventListener('click', function() {
+				this.classList.toggle('active'); // Toggle the 'active' class on the hamburger button
+			});
+		});
+	</script>
+</body>
+</html>
+

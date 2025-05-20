@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(180deg, #0040FF -8.15%, #E6E6E6 100%);
+    min-height: 100vh; /* Ensures the background covers at least the full viewport height */
+    background-attachment: fixed; /* Optional: Makes the background fixed during scrolling */
+}
+
+.portfolio {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 3.75rem;
+}
+.portfolio h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1em;
+    color: #FFFFFF;
+}
+
+.portfolio a {
+    color: white;
+    text-decoration: none;
+}
+
+.portfolio a:hover {
+    color: #0040FF;
+}
+
+@media only screen and (min-width: 900px) {
+    .portfolio {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .portfolio h2 {
+        padding: 0 4rem 0 4rem;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 90px;
+        color: #FFFFFF;
+    }
+    body {
+        background: linear-gradient(180deg, #0040FF -8.15%, rgba(255, 255, 255, 0) 100%);
+    }
+}
+
