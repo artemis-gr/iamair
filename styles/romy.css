@@ -2,13 +2,15 @@ body {
   background: linear-gradient(179.99deg, #0040FF -8.14%, rgba(143, 0, 255, 0.21) 140.36%);
   color: #FFFFFF;
   font-family: "Scada", sans-serif;
-  padding: 0.5rem 3rem;
+  padding: 0;
+  margin: 0;
   min-height: 100vh;
 }
 
 .romy-container {
   max-width: 700px;
   margin: 0 auto;
+  padding-bottom: 3rem;
 }
 
 .romy-title {
@@ -132,9 +134,10 @@ input[type="submit"]:focus {
 }
 
 @media (max-width: 700px) {
-  body {
-    padding: 0rem 1rem;
+  .romy-container {
+    padding: 0rem 1rem 2rem 1rem;
   }
+
   .romy-title {
     line-height: 1.1em;
   }
