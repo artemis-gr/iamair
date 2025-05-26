@@ -19,7 +19,8 @@ body {
   font-weight: 700;
   font-size: 3em;
   line-height: 1.2em;
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
 
@@ -27,19 +28,19 @@ body {
   font-weight: 400;
   font-size: 1.2em;
   line-height: 1.5;
-  margin-bottom: 2rem;
 }
 
 .romy-intro p {
   font-weight: 400;
   font-size: 1em;
   line-height: 1.2;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .form-box {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 textarea {
@@ -84,7 +85,7 @@ input[type="submit"] {
   border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 100px;
   padding: 0.2em 1em;
-  margin-top: 2rem;
+  margin-top: 1rem;
   cursor: pointer;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
